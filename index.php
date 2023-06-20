@@ -66,7 +66,7 @@
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">Profil Desa</a></li>
             <li><a href="#services">Prosedur</a></li>
-            <li><a href="#agenda">Agenda</a></li>
+            <!-- <li><a href="#agenda">Agenda</a></li> -->
             <!-- <li class="dropdown"><a href="layanan"><span>Layanan</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
                 <li><a href="/layanan/surat-ket-usaha">Surat Keterangan Usaha</a></li>

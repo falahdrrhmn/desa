@@ -20,3 +20,28 @@ dan lain sebagainya
 
 2. Clone repositori ini ke dalam direktori web server Anda:
 
+
+
+3. Buat sebuah database baru di database server Anda dan impor file SQL yang terdapat dalam direktori `database` ke dalam database tersebut.
+
+4. Konfigurasi koneksi ke database dengan mengedit file `application/config/database.php`. Sesuaikan dengan pengaturan database server Anda (nama host, nama pengguna, kata sandi, dan nama database).
+
+5. Buka terminal atau command prompt, arahkan ke direktori proyek ini, dan jalankan perintah berikut untuk menjalankan server web lokal:
+
+
+6. Buka browser dan akses `http://localhost:8000` untuk melihat website Desa Junrejo.
+
+## Kontribusi
+
+Jika Anda ingin berkontribusi pada pengembangan proyek ini, Anda dapat mengikuti langkah berikut:
+
+1. Fork repositori ini.
+
+2. Buat branch baru untuk fitur yang ingin Anda tambahkan atau perbaiki.
+
+3. Lakukan perubahan pada branch tersebut.
+
+4. Push branch ke repositori Anda.
+
+5. Ajukan pull request ke repositori ini.
+

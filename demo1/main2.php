@@ -166,6 +166,10 @@
 			  case 'tambah_user';
                 include 'tambah_user.php';
 			  break;
+			  case 'tambah_berita';
+                include 'tambah_berita.php';
+			  break;
+
 			  case 'ubah_user';
                 include 'ubah_user.php';
 			  break;

@@ -9,7 +9,7 @@
                 <div class="card-header">
                     <div class="d-flex align-items-center">
                         <h4 class="card-title">Data Berita</h4>
-                            <a href="?halaman=tambah_user" class="btn btn-primary btn-round ml-auto">
+                            <a href="?halaman=tambah_berita" class="btn btn-primary btn-round ml-auto">
                                 <i class="fa fa-plus"></i>
                                     Tambah Berita
                             </a>

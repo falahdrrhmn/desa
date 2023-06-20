@@ -45,6 +45,12 @@
 								<p>Surat Selesai</p>
 							</a>
 						</li>
+						<li class="nav-item">
+							<a href="?halaman=kelola_berita">
+								<i class="far fa-calendar-check"></i>
+								<p>Berita</p>
+							</a>
+						</li>
 						<?php
 							 }elseif($hak_akses=="Lurah"){
 						?>
@@ -150,6 +156,10 @@
 			  case 'cetak_sktm';
                 include 'cetak_sktm.php';
 			  break;
+			  case 'kelola_berita';
+                include 'kelola_berita.php';
+			  break;
+			  
 			  case 'tampil_user';
                 include 'tampil_user.php';
 			  break;
@@ -158,6 +168,10 @@
 			  break;
 			  case 'ubah_user';
                 include 'ubah_user.php';
+			  break;
+			//   ubah berita
+			  case 'ubah_berita';
+                include 'ubah_berita.php';
 			  break;
 			  case 'view_sktm';
                 include 'view_sktm.php';

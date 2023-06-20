@@ -74,7 +74,7 @@
                 <li><a href="#">Pembuatan KTP</a></li>
                 </ul>
             </li> -->
-            <li><a href="berita">Berita</a></li>
+            <li><a href="demo1\berita\tampilberita.php">Berita</a></li>
             <li><a href="berita">Lokasi</a></li>
             <li><a href="pegawai.php">Login Pegawai</a></li>
             

@@ -8,8 +8,8 @@
  }
  else{
  $hak_akses = $_SESSION['hak_akses'];
- $nama = $_SESSION['nama'];
- $nik = $_SESSION['nik'];
+//  $nama = $_SESSION['nama'];
+//  $nik = $_SESSION['nik'];
  }
  ?>
  <?php

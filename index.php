@@ -62,11 +62,11 @@
         </a>
         <nav id="navbar" class="navbar">
             <ul>
-            <!-- <li><a href="register.php">Buat Akun</a></li> -->
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">Profil Desa</a></li>
             <li><a href="#services">Prosedur</a></li>
             <!-- <li><a href="#agenda">Agenda</a></li> -->
+            <!-- dropdown layanan -->
             <!-- <li class="dropdown"><a href="layanan"><span>Layanan</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
                 <li><a href="/layanan/surat-ket-usaha">Surat Keterangan Usaha</a></li>
@@ -75,7 +75,7 @@
                 </ul>
             </li> -->
             <li><a href="demo1\berita\tampilberita.php">Berita</a></li>
-            <li><a href="berita">Lokasi</a></li>
+            <li><a href="#lokasi">Lokasi</a></li>
             <li><a href="pegawai.php">Login Pegawai</a></li>
             
             <!-- <li><a href="logout">LogOut</a></li> -->
@@ -93,7 +93,7 @@
         <div class="row gy-5" data-aos="fade-in">
             <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
             <h2>Selamat Datang di <span>Desa Junrejo</span></h2>
-            <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+            <p>Website Desa Junrejo untuk mempermudah pegajuan surat, informasi, dan lainnya. Terima kasih!</p>
             <div class="d-flex justify-content-center justify-content-lg-start">
                 <a href="login.php" class="btn-get-started">Login</a>
                 <a href="https://www.youtube.com/watch?v=1OX5S8B1ruU" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
@@ -116,15 +116,58 @@
             <p>Dari hasil pelacakan sejarah oleh sesepuh dan tokoh masyarakat Desa Junrejo disebutkan bahwa asal-usul Desa kami yang bernama Desa Junrejo berasal dari kata “DYON– RETJO“ atau  “JUN WATU“. Dyon menurut bahasa jawa kuno artinya tempat air gentong, sehingga Dyion-Retjo atau Arca Dyion Watu bias bermakna tempat air dari batu.</p>
             <p>Konon menurut sumber informasi yang didapat dari cerita turun temurun, keberadaan JUN tersebut sejak abad IX atau Masa Kerajaan Tumapel/Singosari. Pada tahun 1914 M di Desa Junwatu ditemukan benda berupa ”JUN” dan di Desa Telogo rejo ditemukan ”TELOGO”(menurut masyarakat setempat disebut pula ”JEDING”dalam bahasa Jawa).</p>
             </div>
+            
+            <?php
+            // Buat pernyataan SQL SELECT untuk visi
+            $sqlVisi = "SELECT visi FROM visi_misi";
+
+            // Eksekusi query untuk visi
+            $resultVisi = mysqli_query($konek, $sqlVisi);
+
+            // Inisialisasi array untuk menyimpan hasil query visi
+            $dataVisi = array();
+
+            // Memasukkan hasil query visi ke dalam array
+            if ($resultVisi) {
+                while ($rowVisi = mysqli_fetch_assoc($resultVisi)) {
+                    $dataVisi[] = $rowVisi['visi'];
+                }
+            } else {
+                echo "Gagal mengeksekusi query visi: " . mysqli_error($konek);
+            }
+
+            // Buat pernyataan SQL SELECT untuk misi
+            $sqlMisi = "SELECT misi FROM visi_misi";
+
+            // Eksekusi query untuk misi
+            $resultMisi = mysqli_query($konek, $sqlMisi);
+
+            // Inisialisasi array untuk menyimpan hasil query misi
+            $dataMisi = array();
+
+            // Memasukkan hasil query misi ke dalam array
+            if ($resultMisi) {
+                while ($rowMisi = mysqli_fetch_assoc($resultMisi)) {
+                    $dataMisi[] = $rowMisi['misi'];
+                }
+            } else {
+                echo "Gagal mengeksekusi query misi: " . mysqli_error($konek);
+            }
+
+            ?>
 
             <div class="row gy-4 mt-3">
             <div class="col-lg-6">
                 <div class="content ps-0 ps-lg-5">
                 <h3 class="fst-italic"> Visi</h3>
                 <ul>
-                    <li><i class="bi bi-check-circle-fill"></i>Desa Junrejo yang Maju artinya Desa yang memiliki sumberdaya manusia unggul, potensisosial, ekonomi dan ekologi, serta kemampuan mengelolanya untuk peningkatan kesejahteraan masyarakat Desa, kualitas hidup manusia, dan menanggulangi kemiskinan.</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Adapun yang dimaksud Transparan adalah Pemerintah Desa dalam pembuatan Kebijakan dan Pengelolaan keuangan dilakukan secara terbuka untuk diketahui oleh masyarakat, guna meningkatkan kepercayaan kepada Pemerintah Desa.</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Sedangkan yang dimaksud dengan Sejahtera adalah Mewujudkan masyarakat yang terpenuhi hak-hak dasarnya baik dari aspek kesehatan, pendidikan dan ekonomi yang ditandai dengan meningkatnya angka Indek Pembangunan Manusia (IPM) yang didukung dengan terwujudnya kebebasan kehidupan beragama dan bernegara yang ditunjukkan dengan penurunan angka kemiskinan dan jumlah keluarga Pra Sejahtera</li>
+                    <?php 
+                    foreach ($dataVisi as $visi) {
+                        if (!empty($visi)) {
+                            echo '<li><i class="bi bi-check-circle-fill"></i>' . $visi . '</li>';
+                        }
+                    }
+                    ?>
                 </ul>
                 
                 </div>
@@ -133,10 +176,13 @@
                 <div class="content ps- ps-lg-5">
                 <h3 class="fst-italic">Misi</h3>
                 <ul>
-                    <li><i class="bi bi-check-circle-fill"></i>Meningkatkan kualitas sumberdaya manusia yang unggul dan bermartabat</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Meningkatkan perekonomian Desa melalui penguatan Badan Usaha MilikDesa (BUMDes) dan pemberdayaan ekonomi masyarakat</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Meningkatkan infrastruktur dan utilitas desa, untuk mendukung tata lingkungan desa yang bersih, sehat dan indah</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Melestarikan dan mengembangkanbudayalokalDesaJunrejo</li>
+                    <?php 
+                    foreach ($dataMisi as $misi) {
+                        if (!empty($misi)) {
+                            echo '<li><i class="bi bi-check-circle-fill"></i>' . $misi . '</li>';
+                        }
+                    }
+                    ?>
                 </ul>
                 </div>
                 
@@ -166,7 +212,7 @@
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">Login</h4>
-                                <p>Pemohon Surat melakukan login, melalui halaman Login.
+                                <p>Pemohon Surat melakukan login, melalui halaman Login. Apabila tidak melakukan login dapat menghubungi Balai Desa Junrejo untuk pembuatan akun. Pastikan anda mengetahui NIK dan dokumen yang diperlukan.
                                 </p>
                             </div>
                         </div>
@@ -180,7 +226,7 @@
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">Menginput Data</h4>
-                                <p>Input data pemohon dengan sebelumnya melakukan Login dengan username dan password.</p>
+                                <p>Input data warga junrejo di balai desa.</p>
                             </div>
                         </div>
                     </div>
@@ -206,7 +252,7 @@
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">Permohonan Disetujui</h4>
-                                <p>Permohonan di setujui oleh lurah, kemudian staf akan mencetak surat sesuai request surat yang diajukan, pemohon mengambil surat yang sudah dicetak dan bertandatangan di Kantor Kelurahan Wergu Wetan.</p>
+                                <p>Permohonan di setujui oleh admin, kemudian admin akan mencetak surat sesuai request surat yang diajukan, setelah itu warga dapat mengambil surat yang sudah dicetak dan bertandatangan di Balai Desa Junrejo.</p>
                             </div>
                         </div>
                     </div>
@@ -225,7 +271,7 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="lokasi">
         <div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.6177756555217!2d110.84666041431609!3d-6.816256968564331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70c4e731de9701%3A0xc9561da6c650e3c4!2sKantor%20Kelurahan%20Wergu%20Wetan!5e0!3m2!1sen!2sid!4v1639534764090!5m2!1sen!2sid"  width="100%" height="650px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" alt="lokasi kelurahan"></iframe>
         </div>

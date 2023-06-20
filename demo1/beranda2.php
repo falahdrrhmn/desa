@@ -11,9 +11,7 @@
  $hak_akses = $_SESSION['hak_akses'];
  }
  ?>
-<?php
-    if($hak_akses=="Staf"){
- ?>
+
 				<div class="panel-header bg-primary-gradient">
 					<div class="page-inner py-5">
 						<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
@@ -25,7 +23,7 @@
 				</div>
 				<div class="page-inner">
 					<!-- Card -->
-					<h3 class="fw-bold text-uppercase">TAMPIL REQUEST SURAT KETERANGAN PEMOHON</h3>
+					<h4 class="page-title">TAMPIL REQUEST SURAT KETERANGAN PEMOHON</h4>
 					<!-- Card With Icon States Background -->
 					<div class="row">
 						<div class="col-sm-6 col-md-3">
@@ -166,18 +164,8 @@
 						</div>
 					</div>
 				</div>
-<?php
-    }elseif($hak_akses=="Lurah"){
- ?>
-				<div class="panel-header bg-primary-gradient">
-					<div class="page-inner py-5">
-						<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
-							<div>
-								<h2 class="text-white pb-2 fw-bold">Halo <?php echo $hak_akses;?>!</h2>
-							</div>
-						</div>
-					</div>
-				</div>
+
+				
 				<div class="page-inner">
 					<!-- Card -->
 					<h4 class="page-title">TAMPIL REQUEST SURAT KETERANGAN SUDAH ACC STAF</h4>
@@ -304,7 +292,5 @@
 						</div>
 					</div>
 				</div>
- <?php
-    }
- ?>
+
  

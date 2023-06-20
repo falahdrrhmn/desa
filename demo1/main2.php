@@ -8,7 +8,8 @@
  }
  ?>
 <?php include 'header.php'; ?>
-<!-- Sidebar -->
+
+		<!-- awal Sidebar -->
 		<div class="sidebar sidebar-style-2">			
 			<div class="sidebar-wrapper scrollbar scrollbar-inner">
 				<div class="sidebar-content">
@@ -24,9 +25,7 @@
 							</span>
 							<h4 class="text-section">fitur</h4>
 						</li>
-						<?php
-							if($hak_akses=="Staf"){
-						?>
+						
 						<li class="nav-item">
 							<a href="?halaman=tampil_user">
 								<i class="fas fa-user-alt"></i>
@@ -39,21 +38,19 @@
 								<p>Cetak Surat</p>
 							</a>
 						</li>
+						<!-- <li class="nav-item">
+							<a href="?halaman=kelola_surat">
+								<i class="far fa-calendar-check"></i>
+								<p>Sudah ACC</p>
+							</a>
+						</li> -->
 						<li class="nav-item">
 							<a href="?halaman=surat_dicetak">
 								<i class="far fa-calendar-check"></i>
 								<p>Surat Selesai</p>
 							</a>
 						</li>
-						<li class="nav-item">
-							<a href="?halaman=kelola_berita">
-								<i class="far fa-calendar-check"></i>
-								<p>Berita</p>
-							</a>
-						</li>
-						<?php
-							 }elseif($hak_akses=="Lurah"){
-						?>
+						
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#tables">
 								<i class="fas fa-table"></i>
@@ -75,9 +72,12 @@
 								</ul>
 							</div>
 						</li>
-						<?php
-							}
-						?>
+						<li class="nav-item">
+							<a href="?halaman=kelola_berita">
+								<i class="far fa-calendar-check"></i>
+								<p>Berita</p>
+							</a>
+						</li>
 						<li class="mx-4 mt-2">
 							<a href="logout.php" class="btn btn-danger btn-block"><span class="btn-label mr-2"> <i class="icon-logout"></i> </span>Logout</a> 
 						</li>
@@ -85,7 +85,8 @@
 				</div>
 			</div>
 		</div>
-		<!-- End Sidebar -->
+		<!-- akhir Sidebar -->
+
 
 		<div class="main-panel">
 			<div class="content">
@@ -159,6 +160,10 @@
 			  case 'kelola_berita';
                 include 'kelola_berita.php';
 			  break;
+			  break;
+			//   case 'kelola_surat';
+            //     include 'kelola_surat.php';
+			//   break;
 			  
 			  case 'tampil_user';
                 include 'tampil_user.php';
@@ -173,7 +178,6 @@
 			  case 'ubah_user';
                 include 'ubah_user.php';
 			  break;
-			//   ubah berita
 			  case 'ubah_berita';
                 include 'ubah_berita.php';
 			  break;
@@ -221,5 +225,5 @@
             include 'beranda2.php';
           }
         ?>
-			</div>
+	</div>
 <?php include 'footer.php'; ?>

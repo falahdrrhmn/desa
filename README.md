@@ -12,6 +12,8 @@ Ini adalah proyek website "Desa Junrejo" yang dibangun menggunakan framework Cod
 
 - Galeri Foto: Fitur ini menampilkan kumpulan foto-foto kegiatan dan acara yang telah dilaksanakan di Desa Junrejo. Pengguna dapat melihat foto-foto dalam tampilan galeri yang menarik.
 
+dan lain sebagainya
+
 ## Instalasi
 
 1. Pastikan sudah terinstall PHP dan database server (misalnya MySQL) di komputer Anda.

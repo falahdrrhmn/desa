@@ -96,6 +96,13 @@
 								</ul>
 							</div>
 						</li>
+
+						<li class="nav-item">
+							<a href="?halaman=kelola_berita">
+								<i class="far fa-calendar-check"></i>
+								<p>Berita</p>
+							</a>
+						</li>
 						
 						<li class="mx-4 mt-2">
 							<a href="logout.php" class="btn btn-danger btn-block"><span class="btn-label mr-2"> <i class="icon-logout"></i> </span>Logout</a> 

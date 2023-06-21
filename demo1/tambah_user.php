@@ -59,7 +59,6 @@
 													<select name="hak_akses" class="form-control">
 														<option disabled="" selected="">Pilih Hak Akses</option>
 														<option value="Pemohon">Pemohon</option>
-														<option value="Lurah">Lurah</option>
 														<option value="Staf">Staf</option>
 													</select>
 												</div>

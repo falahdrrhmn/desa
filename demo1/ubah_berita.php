@@ -3,7 +3,7 @@ include '../konek.php';
 
 if(isset($_GET['id'])){
     $id = $_GET['id'];
-    $sql = "SELECT * FROM berita WHERE id='$id'";
+    $sql = "SELECT * FROM beritafix WHERE id='$id'";
     $query = mysqli_query($konek, $sql);
     $data = mysqli_fetch_assoc($query);
 
@@ -18,7 +18,7 @@ if(isset($_POST['ubah'])){
     $isi = $_POST['isi'];
     $tanggal = $_POST['tanggal'];
 
-    $sql = "UPDATE berita SET
+    $sql = "UPDATE beritafix SET
         judul='$judul',
         isi='$isi',
         tanggal='$tanggal'
@@ -27,12 +27,13 @@ if(isset($_POST['ubah'])){
 
     if($query){
         echo "<script>alert('Selamat... Ubah Berhasil');</script>";
-        echo '<meta http-equiv="refresh" content="3; url=?halaman=tampil_user">';
+        echo '<meta http-equiv="refresh" content="3; url=?halaman=kelola_berita">';
     } else {
         echo "<script>alert('Gagal... Ubah Gagal');</script>";
-        echo '<meta http-equiv="refresh" content="3; url=?halaman=ubah_user">';
+        echo '<meta http-equiv="refresh" content="3; url=?halaman=kelola_berita">';
     }
 }
+
 ?>
 
 <div class="page-inner">

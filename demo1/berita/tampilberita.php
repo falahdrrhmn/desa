@@ -22,7 +22,7 @@
     include '../../konek.php';
 
     // Fetch berita from database
-    $query = "SELECT * FROM berita ORDER BY tanggal DESC";
+    $query = "SELECT * FROM beritafix ORDER BY tanggal DESC";
     $result = mysqli_query($konek, $query);
 
     // Check if there are berita available

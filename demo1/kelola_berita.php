@@ -83,7 +83,7 @@
                                                     <tbody>
                                                         <?php
                                                             $no=1;
-                                                            $tampil = "SELECT * FROM berita";
+                                                            $tampil = "SELECT * FROM beritafix";
                                                             $query = mysqli_query($konek,$tampil);
                                                             while($data=mysqli_fetch_array($query,MYSQLI_BOTH)){
                                                                 // $username = $data['nik'];
@@ -136,7 +136,7 @@
 
 <?php
     if(isset($_GET['id'])){
-        $sql_hapus = "DELETE FROM berita WHERE id='".$_GET['id']."'";
+        $sql_hapus = "DELETE FROM beritafix WHERE id='".$_GET['id']."'";
         $query_hapus = mysqli_query($konek,$sql_hapus);
         if($query_hapus){
             echo "<script language='javascript'>swal('Selamat...', 'Hapus Berhasil', 'success');</script>" ;

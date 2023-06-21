@@ -40,20 +40,20 @@
 
 <?php
 if(isset($_POST['simpan'])){
-	$id = $_POST['id'];
+	
 	$judul = $_POST['judul'];
 	$isi = $_POST['isi'];
 	$tanggal = $_POST['tanggal'];
 
-	$sql = "INSERT INTO berita (id,judul,isi,tanggal) VALUES ('$isi','$judul','$isi','$tanggal')";
+	$sql = "INSERT INTO beritafix (id,judul,isi,tanggal) VALUES ('$isi','$judul','$isi','$tanggal')";
 	$query = mysqli_query($konek,$sql);
 
 	if($query){
 		echo "<script language='javascript'>swal('Selamat...', 'Simpan Berhasil', 'success');</script>" ;
-		echo '<meta http-equiv="refresh" content="3; url=?halaman=tampil_user">';
+		echo '<meta http-equiv="refresh" content="3; url=?halaman=kelola_berita">';
 	  }else{
 		echo "<script language='javascript'>swal('Gagal...', 'Simpan Gagal', 'error');</script>" ;
-		echo '<meta http-equiv="refresh" content="3; url=?halaman=tambah_user">';
+		echo '<meta http-equiv="refresh" content="3; url=?halaman=kelola_berita">';
 	  }
 }
 ?>

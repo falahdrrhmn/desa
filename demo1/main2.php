@@ -29,7 +29,7 @@
 						<li class="nav-item">
 							<a href="?halaman=tampil_user">
 								<i class="fas fa-user-alt"></i>
-								<p>Data User</p>
+								<p>Data Warga</p>
 							</a>
 						</li>
 						<li class="nav-item">
@@ -51,6 +51,7 @@
 							</a>
 						</li>
 						
+						<!-- laporan -->
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#tables">
 								<i class="fas fa-table"></i>
@@ -72,12 +73,14 @@
 								</ul>
 							</div>
 						</li>
+
 						<li class="nav-item">
 							<a href="?halaman=kelola_berita">
 								<i class="far fa-calendar-check"></i>
 								<p>Berita</p>
 							</a>
 						</li>
+						
 						<li class="mx-4 mt-2">
 							<a href="logout.php" class="btn btn-danger btn-block"><span class="btn-label mr-2"> <i class="icon-logout"></i> </span>Logout</a> 
 						</li>
@@ -86,7 +89,6 @@
 			</div>
 		</div>
 		<!-- akhir Sidebar -->
-
 
 		<div class="main-panel">
 			<div class="content">
@@ -164,7 +166,6 @@
 			//   case 'kelola_surat';
             //     include 'kelola_surat.php';
 			//   break;
-			  
 			  case 'tampil_user';
                 include 'tampil_user.php';
 			  break;

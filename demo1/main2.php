@@ -74,11 +74,27 @@
 							</div>
 						</li>
 
+						<!-- visi misi -->
 						<li class="nav-item">
-							<a href="?halaman=kelola_berita">
-								<i class="far fa-calendar-check"></i>
-								<p>Berita</p>
+							<a data-toggle="collapse" href="#turun">
+								<i class="fas fa-table"></i>
+								<p>Visi Misi Desa</p>
+								<span class="caret"></span>
 							</a>
+							<div class="collapse" id="turun">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="?halaman=visi">
+											<span class="sub-item">Visi Desa</span>
+										</a>
+									</li>
+									<li>
+										<a href="?halaman=misi">
+											<span class="sub-item">Misi Desa</span>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</li>
 						
 						<li class="mx-4 mt-2">
@@ -185,6 +201,36 @@
 			  case 'view_sktm';
                 include 'view_sktm.php';
 			  break;
+			
+			  // visi 
+			  case 'visi';
+                include 'visimisi/visi.php';
+			  break;
+			  case 'ubahvisi';
+                include 'visimisi/ubahvisi.php';
+			  break;
+			  case 'tambahisi';
+                include 'visimisi/tambahisi.php';
+			  break;
+			// misi
+			case 'misi';
+                include 'visimisi/misi.php';
+			  break;
+			  case 'ubahmisi';
+                include 'visimisi/ubahmisi.php';
+			  break;
+			  case 'tambahmisi';
+                include 'visimisi/tambahmisi.php';
+			  break;
+
+			
+			
+			
+				break;
+			  case 'misi';
+                include 'misi.php';
+			  break;
+
 			  case 'view_sku';
                 include 'view_sku.php';
 			  break;

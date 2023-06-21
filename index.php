@@ -116,10 +116,11 @@
             <p>Dari hasil pelacakan sejarah oleh sesepuh dan tokoh masyarakat Desa Junrejo disebutkan bahwa asal-usul Desa kami yang bernama Desa Junrejo berasal dari kata “DYON– RETJO“ atau  “JUN WATU“. Dyon menurut bahasa jawa kuno artinya tempat air gentong, sehingga Dyion-Retjo atau Arca Dyion Watu bias bermakna tempat air dari batu.</p>
             <p>Konon menurut sumber informasi yang didapat dari cerita turun temurun, keberadaan JUN tersebut sejak abad IX atau Masa Kerajaan Tumapel/Singosari. Pada tahun 1914 M di Desa Junwatu ditemukan benda berupa ”JUN” dan di Desa Telogo rejo ditemukan ”TELOGO”(menurut masyarakat setempat disebut pula ”JEDING”dalam bahasa Jawa).</p>
             </div>
-            
+
+            <!-- visi misi -->
             <?php
             // Buat pernyataan SQL SELECT untuk visi
-            $sqlVisi = "SELECT visi FROM visi_misi";
+            $sqlVisi = "SELECT isi FROM visi";
 
             // Eksekusi query untuk visi
             $resultVisi = mysqli_query($konek, $sqlVisi);
@@ -130,14 +131,14 @@
             // Memasukkan hasil query visi ke dalam array
             if ($resultVisi) {
                 while ($rowVisi = mysqli_fetch_assoc($resultVisi)) {
-                    $dataVisi[] = $rowVisi['visi'];
+                    $dataVisi[] = $rowVisi['isi'];
                 }
             } else {
                 echo "Gagal mengeksekusi query visi: " . mysqli_error($konek);
             }
 
             // Buat pernyataan SQL SELECT untuk misi
-            $sqlMisi = "SELECT misi FROM visi_misi";
+            $sqlMisi = "SELECT isi FROM misi";
 
             // Eksekusi query untuk misi
             $resultMisi = mysqli_query($konek, $sqlMisi);
@@ -148,48 +149,44 @@
             // Memasukkan hasil query misi ke dalam array
             if ($resultMisi) {
                 while ($rowMisi = mysqli_fetch_assoc($resultMisi)) {
-                    $dataMisi[] = $rowMisi['misi'];
+                    $dataMisi[] = $rowMisi['isi'];
                 }
             } else {
                 echo "Gagal mengeksekusi query misi: " . mysqli_error($konek);
             }
-
             ?>
 
             <div class="row gy-4 mt-3">
-            <div class="col-lg-6">
-                <div class="content ps-0 ps-lg-5">
-                <h3 class="fst-italic"> Visi</h3>
-                <ul>
-                    <?php 
-                    foreach ($dataVisi as $visi) {
-                        if (!empty($visi)) {
-                            echo '<li><i class="bi bi-check-circle-fill"></i>' . $visi . '</li>';
-                        }
-                    }
-                    ?>
-                </ul>
-                
+                <div class="col-lg-6">
+                    <div class="content ps-0 ps-lg-5">
+                        <h3 class="fst-italic"> Visi</h3>
+                        <ul>
+                            <?php 
+                            foreach ($dataVisi as $visi) {
+                                if (!empty($visi)) {
+                                    echo '<li><i class="bi bi-check-circle-fill"></i>' . $visi . '</li>';
+                                }
+                            }
+                            ?>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="content ps- ps-lg-5">
+                        <h3 class="fst-italic">Misi</h3>
+                        <ul>
+                            <?php 
+                            foreach ($dataMisi as $misi) {
+                                if (!empty($misi)) {
+                                    echo '<li><i class="bi bi-check-circle-fill"></i>' . $misi . '</li>';
+                                }
+                            }
+                            ?>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="content ps- ps-lg-5">
-                <h3 class="fst-italic">Misi</h3>
-                <ul>
-                    <?php 
-                    foreach ($dataMisi as $misi) {
-                        if (!empty($misi)) {
-                            echo '<li><i class="bi bi-check-circle-fill"></i>' . $misi . '</li>';
-                        }
-                    }
-                    ?>
-                </ul>
-                </div>
                 
-            </div>
-            </div>
-
-        </div>
     </section><!-- End About Us Section -->
 
 

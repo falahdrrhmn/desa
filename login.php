@@ -84,12 +84,17 @@
             $_SESSION['password']=$data_login['password'];
             $_SESSION['nik']=$data_login['nik'];
 
-            if($data_login['hak_akses'] == 'Staf' || $data_login['hak_akses'] == 'Lurah'){
+            // kalo ada lurah ditambahi diatas
+            // || $data_login['hak_akses'] == 'Lurah'
+
+            if($data_login['hak_akses'] == 'Staf' ){
+              // kalo hak akses staf maka masuk main2.php
               echo "<script language='javascript'>swal('Selamat Datang staff', 'Login Berhasil!', 'success');</script>" ;
               echo '<meta http-equiv="refresh" content="3; url=demo1/main2.php">';
             } else {
-              echo "<script language='javascript'>swal('Selamat...', 'Login Berhasil!', 'success');</script>" ;
-              echo '<meta http-equiv="refresh" content="3; url=demo1/main2.php">';
+              // kalo hak akses staf maka masuk main.php
+              // echo "<script language='javascript'>swal('Selamat...', 'Login Berhasil!', 'success');</script>" ;
+              // echo '<meta http-equiv="refresh" content="3; url=demo1/main2.php">';
 
               echo "<script language='javascript'>swal('Selamat...', 'Login Berhasil!', 'success');</script>" ;
               echo '<meta http-equiv="refresh" content="3; url=demo1/main.php">';

@@ -10,6 +10,7 @@
  }
  ?>
 <?php include 'header.php'; ?>
+
 <!-- Sidebar -->
 		<div class="sidebar sidebar-style-2">			
 			<div class="sidebar-wrapper scrollbar scrollbar-inner">
@@ -35,6 +36,33 @@
 								<p>Biodata Anda</p>
 							</a>
 						</li>
+						<!-- dropdown surat keterangan -->
+						<!-- <li class="nav-item">
+							<a data-toggle="collapse" href="#tables">
+								<i class="fas fa-table"></i>
+								<p>Request Surat</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="tables">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="?halaman=laporan_perbulan">
+											<span class="sub-item">Surat Keterangan Usaha</span>
+										</a>
+									</li>
+									<li>
+										<a href="?halaman=laporan_pertahun">
+											<span class="sub-item">Surat Keterangan Tidak Mampu</span>
+										</a>
+									</li>
+									<li>
+										<a href="?halaman=laporan_pertahun">
+											<span class="sub-item">Surat Keterangan Pembuatan KTP</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li> -->
 						<li class="nav-item">
 							<a href="?halaman=tampil_status">
 								<i class="far fa-calendar-check"></i>

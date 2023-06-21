@@ -56,7 +56,7 @@
     <!-- awal header II -->
     <header id="header" class="header d-flex align-items-center">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-        <a href="/" class="logo d-flex align-items-center">
+        <a href="index.php" class="logo d-flex align-items-center">
             <img src="assets/img/logo.png" alt=""> 
             <h1>Desa Junrejo<span></span></h1>
         </a>

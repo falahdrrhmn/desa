@@ -63,10 +63,10 @@
                                             $tgl = $_POST['tgl_acc'];
                                             $update = mysqli_query($konek,"UPDATE data_request_sku SET acc='$tgl', status=2, keterangan='$ket' WHERE id_request_sku=$id");
                                             if($update){
-                                                echo "<script language='javascript'>swal('Selamat...', 'ACC Lurah Berhasil', 'success');</script>" ;
+                                                echo "<script language='javascript'>swal('Selamat...', 'ACC Staf Berhasil', 'success');</script>" ;
                                                 echo '<meta http-equiv="refresh" content="3; url=?halaman=belum_acc_sku">';
                                             }else{
-                                                echo "<script language='javascript'>swal('Gagal...', 'ACC Lurah Gagal', 'error');</script>" ;
+                                                echo "<script language='javascript'>swal('Gagal...', 'ACC Staf Gagal', 'error');</script>" ;
                                                 echo '<meta http-equiv="refresh" content="3; url=?halaman=view_sku">';
                                             }
 
@@ -84,7 +84,7 @@
                                 <table border="1" align="center">
                                 <table border="0" align="center">
         <tr>
-        <td><img src="img/kudus.png" width="70" height="87" alt=""></td>
+        <td><img src="img/junrejo.png" width="85" height="87" alt=""></td>
         <td></td>
         <td></td>
         <td></td>
@@ -106,10 +106,10 @@
         <td></td>
             <td>
                 <center>
-                    <font size="4">PEMERINTAHAN KABUPATEN KUDUS</font><br>
-                    <font size="4">KECAMATAN KOTA KUDUS</font><br>
-                    <font size="5"><b>KELURAHAN WERGU WETAN</b></font><br>
-                    <font size="2"><i>JL. Loram No.9 Kudus 59318</i></font><br>
+                    <font size="4">PEMERINTAHAN KABUPATEN MALANG</font><br>
+                    <font size="4">KECAMATAN KOTA BATU</font><br>
+                    <font size="5"><b>DESA JUNREJO</b></font><br>
+                    <font size="2"><i>Jl. Dr. Soetomo No.51, Junrejo, Kec. Junrejo, Kota Batu, Jawa Timur 65321</i></font><br>
                 </center>
             </td>
         <td></td>
@@ -142,7 +142,7 @@
         <tr>
             <td>
                 <center>
-                    <font size="4"><b>SURAT KETERANGAN / PENGANTAR</b></font><br>
+                    <font size="4"><b>SURAT KETERANGAN / PENGANTAR USAHA</b></font><br>
                     <hr style="margin:0px" color="black">
                     <span>Nomor : 045.2 / <?php echo $id;?> / 29.07.05</span>
                 </center>
@@ -154,7 +154,7 @@
     <table border="0" align="center">
         <tr>
             <td>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yang bertanda tangan di bawah ini Lurah Wergu Wetan Kabupaten Kota <br> Kudus, Menerangkan bahwa :
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yang bertanda tangan di bawah ini Kepala Desa Junrejo Kota <br> Batu, Menerangkan bahwa :
             </td>
         </tr>
     </table>
@@ -230,12 +230,12 @@
         <tr>
             <th></th>
             <th width="100px"></th>
-            <th>Kudus, <?php echo $acc;?></th>
+            <th>Junrejo, <?php echo $acc;?></th>
         </tr>
         <tr>
             <td>Tanda tangan <br> Yang bersangkutan </td>
             <td></td>
-            <td>Lurah Wergu Wetan</td>
+            <td>Kepala Desa Junrejo</td>
         </tr>
         <tr>
             <td rowspan="15"></td>
@@ -287,7 +287,7 @@
         <tr>
             <td><b style="text-transform:uppercase"><u>(<?php echo $nama;?>)</u></b></td>
             <td></td>
-            <td><b><u>(AGUS SUPRIYANTO)</u></b></td>
+            <td><b><u>(Bambang Supriyadi)</u></b></td>
         </tr>
     </table>
                                 

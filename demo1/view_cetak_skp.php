@@ -35,7 +35,7 @@
         }
 
         if($status==3){
-            $keterangan="Sudah ACC Lurah, surat sedang dalam proses cetak oleh staf";
+            $keterangan="Sudah ACC Staf, surat sedang dalam proses cetak";
         }
 	}
 ?>
@@ -100,7 +100,7 @@
                                 <table border="1" align="center">
                                 <table border="0" align="center">
         <tr>
-        <td><img src="img/kudus.png" width="70" height="87" alt=""></td>
+        <td><img src="img/junrejo.png" width="85" height="87" alt=""></td>
         <td></td>
         <td></td>
         <td></td>
@@ -122,10 +122,10 @@
         <td></td>
             <td>
                 <center>
-                    <font size="4">PEMERINTAHAN KABUPATEN KUDUS</font><br>
-                    <font size="4">KECAMATAN KOTA KUDUS</font><br>
-                    <font size="5"><b>KELURAHAN WERGU WETAN</b></font><br>
-                    <font size="2"><i>JL. Loram No.9 Kudus 59318</i></font><br>
+                    <font size="4">PEMERINTAHAN KABUPATEN MALANG</font><br>
+                    <font size="4">KECAMATAN KOTA BATU</font><br>
+                    <font size="5"><b>DESA JUNREJO</b></font><br>
+                    <font size="2"><i>Jl. Dr. Soetomo No.51, Junrejo, Kec. Junrejo, Kota Batu, Jawa Timur 65321</i></font><br>
                 </center>
             </td>
         <td></td>
@@ -170,7 +170,7 @@
     <table border="0" align="center">
         <tr>
             <td>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yang bertanda tangan di bawah ini Lurah Wergu Wetan Kabupaten Kota <br> Kudus, Menerangkan bahwa :
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yang bertanda tangan di bawah ini Kepala Desa Junrejo Kota <br> Batu, Menerangkan bahwa :
             </td>
         </tr>
     </table>
@@ -242,12 +242,12 @@
         <tr>
             <th></th>
             <th width="100px"></th>
-            <th>Kudus, <?php echo $format3;?></th>
+            <th>Junrejo, <?php echo $format3;?></th>
         </tr>
         <tr>
             <td>Tanda tangan <br> Yang bersangkutan </td>
             <td></td>
-            <td>Lurah Wergu Wetan</td>
+            <td>Kepala Desa Junrejo</td>
         </tr>
         <tr>
             <td rowspan="15"></td>
@@ -299,7 +299,7 @@
         <tr>
             <td><b style="text-transform:uppercase"><u>(<?php echo $nama;?>)</u></b></td>
             <td></td>
-            <td><b><u>(AGUS SUPRIYANTO)</u></b></td>
+            <td><b><u>(Bambang Supriyadi)</u></b></td>
         </tr>
     </table>
                                 </table>

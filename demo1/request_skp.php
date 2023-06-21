@@ -15,7 +15,7 @@
 						<form method="POST" enctype="multipart/form-data">
 							<div class="card">
 								<div class="card-header">
-									<div class="card-title">FORM TAMBAH REQUEST SURAT KETERANGAN LAINNYA</div>
+									<div class="card-title">FORM TAMBAH REQUEST SURAT KETERANGAN PEMBUATAN KTP</div>
 								</div>
 								<div class="card-body">
 									<div class="row">
@@ -34,11 +34,11 @@
 											</div>
 											<div class="col-md-6 col-lg-6">		
 												<div class="form-group">
-													<label>Scan KTP</label>
+													<label>Scan KK</label>
 													<input type="file" name="ktp" class="form-control" size="37" required>
 												</div>
 												<div class="form-group">
-													<label>Scan KK</label>
+													<label>Scan Akta</label>
 													<input type="file" name="kk" class="form-control" size="37" required>
 												</div>
 											</div>

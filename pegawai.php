@@ -6,7 +6,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Halaman Login Pegawai</title>
+  <title>Halaman Login Staf</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="main/vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="main/vendors/base/vendor.bundle.base.css">
@@ -37,7 +37,7 @@
               <div class="brand-logo">
                 <img src="main/img/logo4.png"  alt="logo">
               </div>
-              <h4>LOGIN PEGAWAI</h4>
+              <h4>LOGIN STAF</h4>
               
               <!-- masukin NIK -->
               <form method="POST" class="pt-3">

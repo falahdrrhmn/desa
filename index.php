@@ -200,9 +200,10 @@
                 <h2 class="section-title text-center wow fadeInDown">Prosedur Permohonan Surat</h2>
             </div>
 
-            <div class="row">
+            <div class="row text-center">
                 <div class="features">
-                    <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
                         <div class="media service-box">
                             <div class="pull-left">
                                 <img src="main/img/number.png" alt="">
@@ -227,19 +228,21 @@
                             </div>
                         </div>
                     </div>
+                    </div>
+                    
                     <!--/.col-md-4-->
-
-                    <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <img src="main/img/number3.png" alt="">
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Mengajukan Surat Permohonan</h4>
-                                <p>Setelah input data pemohon dengan lengkap dan benar, Pemohon memilih Surat yang mau direquest serta melengkapi data request, Kemudian Dikirim dan Menunggu persetujuan dari Lurah.</p>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                            <div class="media service-box">
+                                <div class="pull-left">
+                                    <img src="main/img/number3.png" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Mengajukan Surat Permohonan</h4>
+                                    <p>Setelah input data pemohon dengan lengkap dan benar, Pemohon memilih Surat yang mau direquest serta melengkapi data request, Kemudian Dikirim dan Menunggu persetujuan dari Lurah.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     <!--/.col-md-4-->
 
                     <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
@@ -253,6 +256,8 @@
                             </div>
                         </div>
                     </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -263,14 +268,14 @@
     <section id="get-in-touch">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">LOKASI</h2>
+                <h2 class="section-title text-center wow fadeInDown">Lokasi</h2>
             </div>
         </div>
     </section>
 
     <section id="lokasi">
         <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.6177756555217!2d110.84666041431609!3d-6.816256968564331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70c4e731de9701%3A0xc9561da6c650e3c4!2sKantor%20Kelurahan%20Wergu%20Wetan!5e0!3m2!1sen!2sid!4v1639534764090!5m2!1sen!2sid"  width="100%" height="650px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" alt="lokasi kelurahan"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63230.73386908585!2d112.5414135!3d-7.90333605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78811378ab339d%3A0x4027a76e3531690!2sJunrejo%2C%20Batu%20City%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1687370912569!5m2!1sen!2sid"  width="100%" height="650px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" alt="lokasi kelurahan"></iframe>
         </div>
     </section>
     <!-- akhir lokasi -->

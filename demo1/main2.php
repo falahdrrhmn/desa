@@ -97,13 +97,23 @@
 							</div>
 						</li>
 
+						<!-- berita -->
 						<li class="nav-item">
 							<a href="?halaman=kelola_berita">
 								<i class="far fa-calendar-check"></i>
 								<p>Berita</p>
 							</a>
 						</li>
+
+						<!-- laporan warga -->
+						<li class="nav-item">
+							<a href="?halaman=tampil_laporan">
+								<i class="far fa-calendar-check"></i>
+								<p>Laporan Warga</p>
+							</a>
+						</li>
 						
+						<!-- tombol -->
 						<li class="mx-4 mt-2">
 							<a href="logout.php" class="btn btn-danger btn-block"><span class="btn-label mr-2"> <i class="icon-logout"></i> </span>Logout</a> 
 						</li>
@@ -229,13 +239,13 @@
 			  case 'tambahmisi';
                 include 'visimisi/tambahmisi.php';
 			  break;
-
-			
-			
-			
-				break;
 			  case 'misi';
                 include 'misi.php';
+			  break;
+
+			//   tampil  laporan
+			  case 'tampil_laporan';
+                include 'laporan/tampillaporan.php';
 			  break;
 
 			  case 'view_sku';

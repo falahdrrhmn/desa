@@ -32,7 +32,7 @@
 					<div class="row mt--2">
 
 						<!-- surat keterangan usaha -->
-						<div class="col-md-3 pr-md-0">
+						<div class="col-md-4 pr-md-0">
 								<div class="card-pricing2 card-primary">
 									<div class="pricing-header">
 										<h6 class="fw-bold text-center text-uppercase">Surat Keterangan Usaha</h6>
@@ -54,7 +54,7 @@
 						</div>
 
 						<!-- surat keterangan tidak mampu -->
-						<div class="col-md-3 pr-md-0">
+						<div class="col-md-4 pr-md-0">
 								<div class="card-pricing2 card-success">
 									<div class="pricing-header">
 										<h6 class="fw-bold text-center text-uppercase">Surat Keterangan Tidak Mampu</h6>
@@ -68,13 +68,13 @@
 									</div>
 									<ul class="pricing-content">
 									</ul>
-									<a href="?halaman=request_sktm" class="btn btn-success btn-round btn-sm mb-3"><span class="btn-label">
+									<a href="?halaman=request_sktm" class="btn btn-success btn-round btn-sm mb-4"><span class="btn-label">
 										<i class="fas fa-plus-circle"></i> Request</a>
 								</div>
 						</div>
 
 						<!-- surat keterangan pembuatan ktp -->
-						<div class="col-md-3 pr-md-0">
+						<div class="col-md-4 pr-md-0">
 								<div class="card-pricing2 card-warning">
 									<div class="pricing-header">
 										<h6 class="fw-bold text-center text-uppercase">Surat Keterangan Pembuatan KTP</h6>

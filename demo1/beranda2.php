@@ -27,7 +27,7 @@
 					<!-- Card With Icon States Background -->
 					<div class="row">
 						
-						<div class="col-sm-6 col-md-3">
+						<div class="col-sm-6 col-md-4">
 							<div class="card card-stats card-round">
 								<div class="card-body">
 									<div class="row align-items-center">
@@ -38,7 +38,7 @@
 												</div>
 											</div>
 										</a>
-										<div class="col col-stats ml-3 ml-sm-0">
+										<div class="col col-stats ml-4 ml-sm-0">
 											<div class="numbers">
 												<p class="card-category">SK USAHA</p>
 												<?php
@@ -62,7 +62,7 @@
 							</div>
 						</div>
 						
-						<div class="col-sm-6 col-md-3">
+						<div class="col-sm-6 col-md-4">
 								<div class="card card-stats card-round">
 									<div class="card-body ">
 										<div class="row align-items-center">
@@ -73,7 +73,7 @@
 													</div>
 												</div>
 											</a>
-											<div class="col col-stats ml-3 ml-sm-0">
+											<div class="col col-stats ml-4 ml-sm-0">
 												<div class="numbers">
 													<p class="card-category">SK TIDAK MAMPU</p>
 													<?php
@@ -97,7 +97,7 @@
 								</div>
 						</div>
 
-						<div class="col-sm-6 col-md-3">
+						<div class="col-sm-6 col-md-4">
 							<div class="card card-stats card-round">
 								<div class="card-body">
 									<div class="row align-items-center">
@@ -108,7 +108,7 @@
 												</div>
 											</div>
 										</a>
-										<div class="col col-stats ml-3 ml-sm-0">
+										<div class="col col-stats ml-4 ml-sm-0">
 											<div class="numbers">
 												<p class="card-category">SK PEMBUATAN KTP</p>
 												<?php
@@ -142,7 +142,7 @@
 					<!-- Card With Icon States Background -->
 					<div class="row">
 						
-						<div class="col-sm-6 col-md-3">
+						<div class="col-sm-6 col-md-4">
 							<div class="card card-stats card-round">
 								<div class="card-body">
 									<div class="row align-items-center">
@@ -153,7 +153,7 @@
 												</div>
 											</div>
 										</a>
-										<div class="col col-stats ml-3 ml-sm-0">
+										<div class="col col-stats ml-4 ml-sm-0">
 											<div class="numbers">
 												<p class="card-category">SK USAHA</p>
 												<?php
@@ -172,7 +172,7 @@
 							</div>
 						</div>
 						
-						<div class="col-sm-6 col-md-3">
+						<div class="col-sm-6 col-md-4">
 								<div class="card card-stats card-round">
 									<div class="card-body ">
 										<div class="row align-items-center">
@@ -183,7 +183,7 @@
 													</div>
 												</div>
 											</a>
-											<div class="col col-stats ml-3 ml-sm-0">
+											<div class="col col-stats ml-4 ml-sm-0">
 												<div class="numbers">
 													<p class="card-category">SK TIDAK MAMPU</p>
 													<?php
@@ -203,7 +203,7 @@
 								</div>
 						</div>
 
-						<div class="col-sm-6 col-md-3">
+						<div class="col-sm-6 col-md-4">
 							<div class="card card-stats card-round">
 								<div class="card-body">
 									<div class="row align-items-center">
@@ -214,7 +214,7 @@
 												</div>
 											</div>
 										</a>
-										<div class="col col-stats ml-3 ml-sm-0">
+										<div class="col col-stats ml-4 ml-sm-0">
 											<div class="numbers">
 												<p class="card-category">SK PEMBUATAN KTP</p>
 												<?php

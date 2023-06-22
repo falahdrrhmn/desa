@@ -69,6 +69,13 @@
 								<p>Status Request</p>
 							</a>
 						</li>
+
+						<li class="nav-item">
+							<a href="?halaman=tampil_lapor">
+								<i class="far fa-calendar-check"></i>
+								<p>Lapor</p>
+							</a>
+						</li>
 						<?php
 							}
 						?>
@@ -150,6 +157,10 @@
 			  case 'cetak_sktm';
                 include 'cetak_sktm.php';
 			  break;
+			  case 'tampil_lapor';
+                include 'laporan/tampillapor.php';
+			  break;
+			
 			  case 'tampil_user';
                 include 'tampil_user.php';
 			  break;
